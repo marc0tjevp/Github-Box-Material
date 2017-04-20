@@ -15,7 +15,7 @@ Include github-repos.js, github-repos.css in the page you want to display a GitH
 
 Display a box:
 ```html
-	<a href="//github.com/marc0tjevp/United-GTK">United GTK</a>
+<a href="//github.com/marc0tjevp/United-GTK">United GTK</a>
 ```
 
 Create a main object that receives a selector, for which element will be replaced with a GitHub-Box:
