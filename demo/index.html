@@ -3,9 +3,9 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Github Repos Widget</title>
+  <title>GitHub-Box</title>
 
-  <!-- Plugin CSS -->
+  <!-- GitHub-Box CSS -->
   <link rel="stylesheet" href="css/base.css">
 
   <!-- Font Awesome CSS -->
@@ -22,7 +22,8 @@
 
 <main>
 	<div class="container">
-		<div class="row">
+		<div class="row center">
+			<h5>GitHub-Box-Material</h5>
 		</div>
 		<div class="row">
 			<div class="projects col m12 l12 s12">
@@ -38,9 +39,13 @@
 
   </main>
 
-  <script src="github-repos.js"></script>
+  <!-- GitHub-Box JS -->
+  <script src="js/github-repos.js"></script>
+
+  <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
+  <!-- Give the surrounding tag to the constructor -->
   <script>
     GHRepos.create('.projects a')
   </script>
