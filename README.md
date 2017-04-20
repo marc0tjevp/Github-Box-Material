@@ -6,13 +6,17 @@ A GitHub repository widget made with MaterializeCSS
 ## Description
 This version of github-repos works with MaterializeCSS. I'm planning on using it for my portfolio.
 
-## Usage
-Include github-repos.js, github-repos.css and MaterializeCSS in the page you want to display a GitHub-Box.
+## Dependencies
 
-Display a box
+This widget makes use of MaterializeCSS and Font Awesome.
+
+## Usage
+Include github-repos.js, github-repos.css in the page you want to display a GitHub-Box.
+
+Display a box:
 	<a href="//github.com/marc0tjevp/United-GTK">United GTK</a>
 
-You can link boxes to a class or id by using
+Create a main object that receives a selector, for which element will be replaced with a GitHub-Box:
 	  <script>
 	  	GHRepos.create('.projects a')
 	  </script>
