@@ -14,13 +14,14 @@ This widget makes use of MaterializeCSS and Font Awesome.
 Include github-repos.js, github-repos.css in the page you want to display a GitHub-Box.
 
 Display a box:
+```html
 	<a href="//github.com/marc0tjevp/United-GTK">United GTK</a>
+```
 
 Create a main object that receives a selector, for which element will be replaced with a GitHub-Box:
-	  <script>
-	  	GHRepos.create('.projects a')
-	  </script>
-
+```javascript
+GHRepos.create('.projects a')
+```
 
 ## License
 This is distributed under the terms of the GNU General Public License, version 2 or later.
