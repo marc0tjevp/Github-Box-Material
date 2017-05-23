@@ -6,7 +6,6 @@
   float: left;
   margin-right: 1.2em;
   margin-bottom: 2em;
-  width: 46%;
   border-radius: 2px;
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
 }
@@ -126,11 +125,13 @@
   right: 10px;
   height: 25px;
   display: block;
-  width: 30px;
-  padding: 0;
+  padding-left: 4px;
+  padding-right: 4px;
   line-height: 26px;
 }
 
-.github-box .github-box-download .repo-download i {
-  font-size: 1rem;
+.github-box .github-box-download .repo-download {
+  font-size: 10px;
+  text-transform: none;
+  letter-spacing: inherit;
 }
