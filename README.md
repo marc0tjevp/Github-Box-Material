@@ -1,7 +1,7 @@
 # GitHub-Box-Material
 A GitHub repository widget made with MaterializeCSS
 
-![alt text](https://github.com/marc0tjevp/github-box-material/raw/master/preview.jpeg "Preview")
+![alt text](https://github.com/marc0tjevp/github-box-material/raw/develop/preview.png "Preview")
 
 ## Description
 GitHub-Box-Material is a little widget that gives you the posibility to show a repository on a webpage.
