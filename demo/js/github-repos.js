@@ -1,4 +1,4 @@
-;(function(){
+(function(){
 
     // Pad a number to 2 digits
     function pad (n) {
@@ -12,9 +12,10 @@
             return data[key]
         })
     }
-    
-    var cid = 0                   // unique ID for jsonp callbacks
-      , template = "<div class=\"github-box-header\">\n    <h3><a href=\"{{html_url}}\">{{name}}</a></h3>\n    <span class=\"github-stats badge\">\n        <a class=\"repo-watchers\" href=\"{{html_url}}/watchers\">{{watchers}}</a>\n        <a class=\"repo-forks\" href=\"{{html_url}}/forks\">{{forks}}</a>\n    </span>\n</div>\n<div class=\"github-box-content\">\n    <p>{{description}}</p>\n</div>\n<div class=\"github-box-download\">\n    <p class=\"repo-update\">Latest commit to <strong>master</strong> on {{pushed_at}}</p>\n    <a class=\"btn grey darken-3 repo-download\" href=\"{{html_url}}\">Show on GitHub</a>\n</div>" // replaced with HTML template string on build
+
+    // unique ID for jsonp callbacks
+    var cid = 0
+      , template = "<div class=\"github-box-header\">\n    <h3><a href=\"{{html_url}}\">{{name}}</a></h3>\n    <span class=\"github-stats badge\">\n        <a class=\"repo-stars\" href=\"{{html_url}}/stargazers\"><i class=\"fa fa-star\"></i> {{watchers}}</a>\n        <a class=\"repo-forks\" href=\"{{html_url}}/forks\"><i class=\"fa fa-code-fork\"></i> {{forks}}</a>\n    </span>\n</div>\n<div class=\"github-box-content\">\n    <p>{{description}}</p>\n</div>\n<div class=\"github-box-download\">\n    <p class=\"repo-update\">Latest commit on {{pushed_at}}</p>\n    <a class=\"btn grey darken-3 hide-on-small-only repo-download\" href=\"{{html_url}}\">Show on GitHub</a>\n</div>" // replaced with HTML template string on build
 
     // Private function to generate a jsonp callback
     // which deletes itself upon invocation
@@ -25,7 +26,7 @@
             delete window[name]
         }
         return name
-    }    
+    }
 
     // Widget constructor
     function Repo(repo, target){
@@ -68,7 +69,7 @@
           , day       = pushed_at.getDate()
           , year      = pushed_at.getFullYear()
 
-        data.pushed_at = pad(month) + '/' + pad(day) + '/' + year
+        data.pushed_at = year + '/' + pad(month) + '/' + pad(day)
         data.repo_url  = '//github.com/' + this.repo
 
         var box = document.createElement('div')

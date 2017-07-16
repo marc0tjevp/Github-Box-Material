@@ -6,8 +6,9 @@
   float: left;
   margin-right: 1.2em;
   margin-bottom: 2em;
+  width: 100%;
   border-radius: 2px;
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 .github-box a {
@@ -55,20 +56,21 @@
   display: inline-block;
   height: 21px;
   color: #666;
-  padding: 0 5px 0 18px;
-  background: url('btn-sprite.png') no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  padding: 0 5px 0 5px;
   opacity: 0.7;
 }
 
 .github-box .github-box-header .github-stats a:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
 .github-box .github-box-header .github-stats .repo-watchers {
   border-right: 1px solid #ddd;
   background-position: 3px 4px;
+}
+
+.github-box .github-box-header .github-stats .repo-stars {
+  border-right: 1px solid #ddd;
 }
 
 .github-box .github-box-header .github-stats .repo-forks {
@@ -79,7 +81,7 @@
 
 .github-box .github-box-content {
   padding: 10px;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .github-box .github-box-content p {
@@ -87,19 +89,19 @@
 }
 
 .github-box .github-box-content a {
-      display: block;
+  display: block;
 }
 
 .github-box .github-box-content .repo-link {
   font-weight: bold;
 }
 
-/* Github Box Download */
+/* Github Box Button */
 
 .github-box .github-box-download {
   position: relative;
   border-top: 1px solid #ddd;
-  background: white;
+  background: #fff;
   border-radius: 0 0 3px 3px;
   padding: 10px;
 }
@@ -109,12 +111,6 @@
   font-size: 11px;
   color: #666;
   line-height: 24px;
-}
-
-.github-box .github-box-download .repo-update strong {
-  font-size: 12px;
-  font-weight: bold;
-  color: #000;
 }
 
 .github-box .github-box-download .repo-download {
@@ -131,7 +127,7 @@
 }
 
 .github-box .github-box-download .repo-download {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: none;
   letter-spacing: inherit;
 }
